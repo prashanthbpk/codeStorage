@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="471cd196-f373-4890-8961-9ae7ea50ca47" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="solo-appFlow" doc:id="44058230-f4b5-4666-b19c-2ee4b62cfedc" >
+		<http:listener doc:name="Listener" doc:id="49586579-aa29-40a5-9863-46e503ab4fa9" config-ref="HTTP_Listener_config" path="/solo"/>
+		<http:request method="GET" doc:name="Request" doc:id="458b58e5-c00d-4f0b-9df3-cbd8047a2702" url="http://worldtimeapi.org/api/timezone/Asia/Kolkata"/>
+	
+	
+	</flow>
+</mule>
