@@ -2,12 +2,7 @@ pipeline {
   agent any
   
   stages {
-   
-   stage('Checkout Scm') {
-      steps {
-        git(url: 'https://github.com/pasi2695/myCodeMulesoft.git', credentialsId: '46629a15-baa9-441f-8962-bb31f99517ea')
-      }
-    }
+  
     
    stage('Build Application') {
     steps {
@@ -33,7 +28,5 @@ pipeline {
    } 
   }
  }
- triggers {
-    pollSCM('* * * * *')
-  }
+
  }
