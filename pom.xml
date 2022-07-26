@@ -37,7 +37,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>babu</applicationName>
+				<applicationName>babu-papa</applicationName>
 				<muleVersion>4.4.0</muleVersion>
 				<objectStoreV2>true</objectStoreV2>
 				</cloudHubDeployment>
