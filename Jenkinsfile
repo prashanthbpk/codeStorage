@@ -5,7 +5,7 @@ pipeline {
    
    stage('Checkout Scm') {
       steps {
-        git(url: 'https://github.com/pasi2695/myCodeMulesoft.git', credentialsId: '7de83f0f-eb13-434d-8c5e-ede00041da87')
+        git(url: 'https://github.com/pasi2695/myCodeMulesoft.git', credentialsId: '46629a15-baa9-441f-8962-bb31f99517ea')
       }
     }
     
