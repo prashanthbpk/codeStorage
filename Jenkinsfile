@@ -18,8 +18,6 @@ pipeline
    steps{
    bat 'newman run D:\\newmann\\WORLD_TIMEZONE.postman_collection.json --disable-unicode'
    }
-   }
-   
-   
+   } 
   }
  }
