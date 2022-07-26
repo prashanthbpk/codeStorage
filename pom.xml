@@ -36,7 +36,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>Mulesoft</applicationName>
+				<applicationName>Mule1234</applicationName>
 				<password>Zxcvbnm,123</password>
 				<muleVersion>4.4.0</muleVersion>
 				<objectStoreV2>true</objectStoreV2>
