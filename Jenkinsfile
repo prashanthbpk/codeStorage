@@ -4,23 +4,26 @@ pipeline {
   stages {
    stage('Build Application') {
     steps {
-         https://github.com/pasi2695/myCodeMulesoft.git
+         dir('D:\git_Checkout_code') {         
          bat 'mvn clean install'
+   }
    }
    }
    
    stage('Deploy Application to Mulesoft CloudHub') {
     steps {
-         https://github.com/pasi2695/myCodeMulesoft.git
+         dir('D:\git_Checkout_code') {
          bat 'mvn package deploy -DmuleDeploy'
+   }
    }
    }
    
    stage('Perform Regression Testing') {
     steps {
-         https://github.com/pasi2695/myCodeMulesoft.git
+         dir('C:\Users\ADMIN\AppData\Roaming\npm') {
          bat 'newman run D:\\newmann\\WORLD_TIMEZONE.postman_collection.json --disable-unicode'
    }
    } 
   }
+ }
  }
